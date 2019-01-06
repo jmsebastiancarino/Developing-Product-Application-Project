@@ -1,0 +1,133 @@
+\documentclass[ignorenonframetext,]{beamer}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\newif\ifbibliography
+\hypersetup{
+            pdftitle={Interactive Data Science},
+            pdfauthor={Juan Mari Sebastian Carino},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+% Prevent slide breaks in the middle of a paragraph:
+\widowpenalties 1 10000
+\raggedbottom
+
+\AtBeginPart{
+  \let\insertpartnumber\relax
+  \let\partname\relax
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \let\insertsectionnumber\relax
+    \let\sectionname\relax
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \let\insertsubsectionnumber\relax
+  \let\subsectionname\relax
+  \frame{\subsectionpage}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+\title{Interactive Data Science}
+\author{Juan Mari Sebastian Carino}
+\date{January 6, 2019}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Interactive?}
+
+Yes!!! Interactive means allowing YOU to select which is which like a
+calculator. YOU select the inputs and the app will give you the output
+based on your selected inputs. Isn't that great?
+
+\begin{center}\includegraphics[width=500,height=350]{Interactive2} \end{center}
+
+\end{frame}
+
+\begin{frame}{Inspiration}
+
+The inspiration behind this application is the inspiring words and
+lectures from Andrew Ng and course professors, Roger Peng, Jeff Leek,
+and Brian Caffo. I see how amazing machine learning models has become
+and how it contributed greatly in improving prediction and strategic
+solutions.
+
+With this, I think of utilizing this models like a calculator where
+there is a dataset as ``numbers'', models as ``settings'', and functions
+as ``tools''. The growth of technological advancement is tremendous and
+this idea of Interactive Data Science may soon be realized in the
+academe, research, and even business.
+
+\end{frame}
+
+\begin{frame}{Selections}
+
+In this application, user is given three selections: dataset, dependent
+variable, and models. The available datasets are: Motor Trend Car Road
+Tests (mtcars), Swiss Fertility and Socioeconomic Indicators (1888) Data
+(swiss), and New York Air Quality Measurements (airquality). The
+dependent variable is based on the given variables in the chosen
+dataset. The models available are: Random Forest, Generalized Linear
+Regression, and Trees.
+
+\includegraphics[width=500,height=200]{Input}
+
+\end{frame}
+
+\begin{frame}{Output}
+
+Based from the selected inputs, the user can see the dataset, the
+summary of the model, and the relevant plot. With these, the user can
+perform basic analysis.
+
+\includegraphics[width=700,height=350]{Output}
+
+\end{frame}
+
+\begin{frame}{Future}
+
+Amassing the data science toolbox into a calculator gives you a toolkit
+in your day-to-day analysis and research making it more convenient and
+easy-to-use. The future of Interactive Data Science begins here!
+
+\begin{center}\includegraphics[width=600,height=350]{Interactive} \end{center}
+
+\end{frame}
+
+\end{document}
