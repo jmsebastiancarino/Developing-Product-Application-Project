@@ -1,61 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Interactive Data Science</title>
+## Developing Product Application
 
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="generator" content="pandoc" />
+This is a project that involves developing web applications using shiny. The objective of this project is to produce a web application that encompasses practical application of machine learning. 
 
+The inspiration of this project takes from the ERP software in which users do all of their daily activities inside the system. Here, I created a calculator-like application where users alike can run machine learning at ease and see the results without having to do the coding part. 
 
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <base target="_blank">
-
-  <script type="text/javascript">
-    var SLIDE_CONFIG = {
-      // Slide settings
-      settings: {
-                title: 'Interactive Data Science',
-                        useBuilds: true,
-        usePrettify: true,
-        enableSlideAreas: true,
-        enableTouch: true,
-                        favIcon: 'ML_logo.png',
-              },
-
-      // Author information
-      presenters: [
-            {
-        name:  'Juan Mari Sebastian Carino' ,
-        company: '',
-        gplus: '',
-        twitter: '',
-        www: '',
-        github: ''
-      },
-            ]
-    };
-  </script>
-  <slide class="backdrop"></slide>
-
-</slides>
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-
-
-</body>
-</html>
+The application only runs built-in dataset. For future development, I want to make machine learning more accessible to all users by allowing them to upload data and have the system itself do the processing, running, and finally giving results. 
